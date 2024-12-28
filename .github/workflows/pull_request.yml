@@ -12,4 +12,4 @@ permissions:
 jobs:
   dependency-review:
     name: dependency-review
-    uses: percebus/github-reusable-workflows/.github/workflows/dependency-review@main
+    uses: percebus/github-reusable-workflows/.github/workflows/dependency-review.yml@main
