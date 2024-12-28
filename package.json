@@ -1,0 +1,34 @@
+{
+  "name": "github-reusable-workflows-node",
+  "version": "1.0.0",
+  "description": "GitHub re-usable workflows node",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier .",
+    "prettier:check": "npm run prettier -- --check",
+    "prettier:write": "npm run prettier -- --write",
+    "lint": "npm run prettier:check",
+    "style": "npm run prettier:write",
+    "poststyle": "npm run prettier:check",
+    "pretest": "npm run lint",
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/percebus/github-reusable-workflows-node.git"
+  },
+  "keywords": [
+    "github",
+    "workflows",
+    "actions"
+  ],
+  "author": "JCystems",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/percebus/github-reusable-workflows-node/issues"
+  },
+  "homepage": "https://github.com/percebus/github-reusable-workflows-node#readme",
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
+}
