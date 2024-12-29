@@ -1,5 +1,5 @@
 {
-  "name": "github-reusable-workflows-node",
+  "name": "github-actions-node",
   "version": "1.0.0",
   "description": "GitHub re-usable workflows node",
   "main": "index.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/percebus/github-reusable-workflows-node.git"
+    "url": "git+https://github.com/percebus/github-actions-node.git"
   },
   "keywords": [
     "github",
@@ -25,9 +25,9 @@
   "author": "JCystems",
   "license": "SEE LICENSE IN LICENSE.md",
   "bugs": {
-    "url": "https://github.com/percebus/github-reusable-workflows-node/issues"
+    "url": "https://github.com/percebus/github-actions-node/issues"
   },
-  "homepage": "https://github.com/percebus/github-reusable-workflows-node#readme",
+  "homepage": "https://github.com/percebus/github-actions-node#readme",
   "devDependencies": {
     "prettier": "^3.4.2"
   }
