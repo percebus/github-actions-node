@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: percebus/github-actions-common/.github/actions/checkout@main
-      - uses: ./actions/node_setup
+      - uses: ./.github/actions/node_setup
 
       - name: npm run setup
         run: npm run setup:ci --if-present
