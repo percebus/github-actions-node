@@ -23,15 +23,15 @@ jobs:
       max-parallel: 6
       matrix:
         node-version:
-          - "LTS"
+          - ""  # LTS
           - "latest"
           - "22.0"
           - "23.0"
 
     name: node @ ${{ matrix.node-version }}
     steps:
-      - uses: percebus/github-actions-node/.github/actions/setup@main
       # - uses: ./.github/actions/setup  # FIXME Why doesn't this work?
+      - uses: percebus/github-actions-node/.github/actions/setup@main # XXX
         with:
           node-version: ${{ matrix.node-version }}
 
