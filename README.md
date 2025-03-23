@@ -10,6 +10,6 @@ GitHub re-usable workflows &amp; actions
 
 ### Actions
 
-| action                           | tests |
-| -------------------------------- | ----- |
-| [setup](./.github/actions/setup) | TODO  |
+| action                           | tests                                                                                                                                                                                                                   |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [setup](./.github/actions/setup) | [![Test actions/setup](https://github.com/percebus/github-actions-node/actions/workflows/test_actions__setup.yml/badge.svg)](https://github.com/percebus/github-actions-node/actions/workflows/test_actions__setup.yml) |
