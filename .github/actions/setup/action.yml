@@ -1,4 +1,4 @@
-name: setup node
+name: setup-node
 description: setup node
 inputs:
   node-version:
