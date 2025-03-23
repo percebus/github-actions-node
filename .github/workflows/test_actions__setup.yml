@@ -23,7 +23,7 @@ jobs:
       max-parallel: 6
       matrix:
         node-version:
-          - ""  # LTS
+          - "" # LTS
           - "latest"
           - "22.0"
           - "23.0"
