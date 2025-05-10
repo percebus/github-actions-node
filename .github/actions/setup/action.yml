@@ -1,4 +1,4 @@
-name: setup-node
+name: setup
 description: setup node
 inputs:
   node-version:
@@ -17,6 +17,8 @@ outputs:
 runs:
   using: composite
   steps:
+    # TODO? When empty, default to input
+    # Instead of setup-node@v3
     - name: setup node @ ${{ inputs.node-version }}
       uses: actions/setup-node@v3
       with:

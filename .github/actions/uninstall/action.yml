@@ -1,0 +1,24 @@
+name: uninstall
+description: setup node
+
+runs:
+  using: composite
+  steps:
+    - name: node --version (before)
+      shell: bash
+      run: |
+        which node
+        node --version
+      continue-on-error: true
+
+    - name: rm node
+      shell: bash
+      run: |
+        rm -rf /usr/local/bin/node
+
+    - name: node --version (after)
+      shell: bash
+      run: |
+        which node
+        node --version
+      continue-on-error: true
