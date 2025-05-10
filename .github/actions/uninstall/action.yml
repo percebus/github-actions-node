@@ -1,6 +1,8 @@
 name: uninstall
 description: setup node
 
+# TODO input to verify
+
 runs:
   using: composite
   steps:
@@ -16,9 +18,11 @@ runs:
       run: |
         rm -rf /usr/local/bin/node
 
-    - name: node --version (after)
-      shell: bash
-      run: |
-        which node
-        node --version
-      continue-on-error: true
+    # TODO?
+    # Task pass, but exit 1 still shows
+    # - name: node --version (after)
+    #   shell: bash
+    #   run: |
+    #     which node
+    #     node --version
+    #   continue-on-error: true
