@@ -14,9 +14,6 @@ jobs:
       - uses: percebus/github-actions-common/.github/actions/checkout@main
       - uses: ./.github/actions/setup
 
-      - name: node --version
-        run: node --version
-
   node__matrix:
     needs: default
     runs-on: ubuntu-latest
@@ -33,10 +30,7 @@ jobs:
 
     name: node @ ${{ matrix.node-version }}
     steps:
-      # - uses: ./.github/actions/setup  # FIXME Why doesn't this work?
-      - uses: percebus/github-actions-node/.github/actions/setup@main # XXX
+      - uses: ./.github/actions/setup  # FIXME Why doesn't this work?
+      # - uses: percebus/github-actions-node/.github/actions/setup@main # XXX
         with:
           node-version: ${{ matrix.node-version }}
-
-      - name: node --version
-        run: node --version
