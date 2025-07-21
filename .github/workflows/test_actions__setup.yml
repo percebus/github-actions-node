@@ -30,7 +30,7 @@ jobs:
 
     name: node @ ${{ matrix.node-version }}
     steps:
-      - uses: ./.github/actions/setup  # FIXME Why doesn't this work?
-      # - uses: percebus/github-actions-node/.github/actions/setup@main # XXX
+      # - uses: ./.github/actions/setup  # FIXME Why doesn't this work?
+      - uses: percebus/github-actions-node/.github/actions/setup@main # XXX
         with:
           node-version: ${{ matrix.node-version }}
