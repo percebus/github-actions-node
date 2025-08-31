@@ -1,5 +1,7 @@
 # (node) uninstall
 
+[`LICENSE`](./LICENSE)
+
 The opposite of `setup`.
 
 ## Motivation

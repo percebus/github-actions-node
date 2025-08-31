@@ -1,5 +1,7 @@
 # (node) setup
 
+[`LICENSE`](./LICENSE)
+
 A wrapper to abstract
 
 - `version`: (i.e. `LTS` VS `22`, `23`, `24`)
