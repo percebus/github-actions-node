@@ -6,8 +6,10 @@ inputs:
     required: false
 
     # SRC: https://nodejs.org/en/about/previous-releases
-    # TODO? Use LTS or something ("" for 'latest')
-    default: "22"
+    # - "" is Maintenance LTS (18)
+    # - "lts/*" is Active LTS (22)
+    # - "latest" and "node" are Current (24)
+    default: "lts/*"
 
 outputs:
   version:
