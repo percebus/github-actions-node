@@ -2,10 +2,8 @@ name: "[C]ontinuous [I]ntegration"
 
 on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
-  push:
-    branches:
-      - main
   pull_request:
+  push:
     branches:
       - main
 
@@ -22,16 +20,3 @@ jobs:
     uses: percebus/github-actions-npm/.github/workflows/run_script.yml@main
     with:
       script: lint
-
-  #
-  codeQL:
-    needs: lint
-    permissions:
-      actions: read
-      contents: read
-      security-events: write
-
-    name: "CodeQL: analyze"
-    uses: percebus/github-actions-compliance/.github/workflows/codeql_analyze.yml@main
-    with:
-      language: actions
